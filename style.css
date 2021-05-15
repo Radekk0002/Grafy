@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper{
+    margin-top: 3rem;
+}
+
+#matrixContainer > div > div:nth-child(3) button{
+    width: 30px;
+    display: inline-block;
+}
+
+#matrix input{
+    width: 50px;
+    padding: .5rem;
+    margin: .3rem;
+}
+
+#result > p:first-child{
+    font-size: 2rem;
+}
+
+#result > p:not(:first-child){
+    font-size: 1.6rem;
+}
+
