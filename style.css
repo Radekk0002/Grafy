@@ -8,8 +8,13 @@
     margin-top: 3rem;
 }
 
-#matrixContainer > div > div:nth-child(3) button{
-    width: 30px;
+.container{
+    max-width: none;
+    margin: 80px;
+}
+
+#titleContainer > div > div:nth-child(3) button{
+    width: 40px;
     display: inline-block;
 }
 
@@ -25,5 +30,9 @@
 
 #result > p:not(:first-child){
     font-size: 1.6rem;
+}
+
+.matrixRow{
+    display: inline-flex; 
 }
 
