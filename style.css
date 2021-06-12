@@ -3,6 +3,9 @@
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    overflow: hidden;
+}
 
 #wrapper{
     margin-top: 3rem;
