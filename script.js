@@ -119,7 +119,7 @@ function FindCycle1() {
     for (let i = 0; i < backEdges.length; i++) {
         start = backEdges[i][1];
         end = backEdges[i][0];
-        // URUCHOMIENIE BFS DLA KAŻDEJ KRAWĘDZI POWROTNEJ
+        // URUCHOMIENIE ALGORYTMU ZNAJDUJĄCEGO NAJKRÓTSZĄ ŚCIEŻKĘ DLA KAŻDEJ KRAWĘDZI POWROTNEJ
         path = FindShortestPath(start, end, matrix);
 
         v = end;
