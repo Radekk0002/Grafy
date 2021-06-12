@@ -3,17 +3,15 @@
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
-body{
-    overflow: hidden;
-}
 
 #wrapper{
     margin-top: 3rem;
+    padding: 50px;
 }
 
 .container{
     max-width: none;
-    margin: 80px;
+    margin: auto;
 }
 
 #titleContainer > div > div:nth-child(3) button{
