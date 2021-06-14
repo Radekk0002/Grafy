@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projekt nr 27</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="container pl-0 pr-0">
+                <h4 class="text-center">
+                    Projekt nr 27 - Opracować i zaimplementować algorytm
+                    znajdujący najkrótszy cykl w grafie skierowanym.
+                </h4>
+                <h5 class="mb-5">
+                    Wykonali:
+                    <p class="m-1 ml-3">Borsuk Jakub</p>
+                    <p class="m-1 ml-3">Kisiel Radosław</p>
+                    <p class="m-1 ml-3">Ocypa Bartłomiej</p>
+                </h5>
+                <p>
+                    "Znajdź cykl 1" - metoda szukająca najkrótszego cyklu
+                    sugerując się liczbą wierzchołków
+                </p>
+                <p>
+                    "Znajdź cykl 2" - metoda szukająca najkrótszego cyklu
+                    sugerując się wagami
+                </p>
+                <div class="d-flex mt-3">
+                    <div id="matrixContainer" class="d-flex flex-column mb-4">
+                        <div
+                            id="titleContainer"
+                            class="d-flex flex-column align-items-center"
+                        >
+                            <div
+                                class="
+                                    d-flex
+                                    mb-2
+                                    align-items-center align-self-start
+                                "
+                            >
+                                <h4 class="mr-3">Macierz sąsiedztwa</h4>
+                                <button id="reset" class="btn btn-danger mr-2">
+                                    Zresetuj
+                                </button>
+                                <div class="align-self-end">
+                                    <button
+                                        id="removeDimension"
+                                        type="button"
+                                        class="btn btn-secondary p-2 m-1"
+                                    >
+                                        -
+                                    </button>
+                                    <button
+                                        id="addDimension"
+                                        type="button"
+                                        class="btn btn-secondary p-2 m-1"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                                <div
+                                    class="
+                                        d-flex
+                                        justify-content-center
+                                        align-self-center
+                                        ml-2
+                                    "
+                                >
+                                    <button
+                                        id="findCycle"
+                                        type="button"
+                                        class="btn btn-primary p-2"
+                                    >
+                                        Znajdź cykl 1
+                                    </button>
+                                    <button
+                                        id="findCycle2"
+                                        type="button"
+                                        class="btn btn-primary p-2 ml-2"
+                                    >
+                                        Znajdź cykl 2
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            id="matrix"
+                            class="d-flex flex-column align-self-center"
+                        >
+                            <div class="matrixRow">
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                            <div class="matrixRow">
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                            <div class="matrixRow">
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                            <div class="matrixRow">
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                            <div class="matrixRow">
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="result" class="flex-grow-1 mt-4 ml-5">
+                <p>Wynik:</p>
+                <p id="weight" class="pl-5">Waga:</p>
+                <p id="cycle" class="pl-5">Cykl:</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
