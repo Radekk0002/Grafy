@@ -107,11 +107,9 @@ function FindCycle1() {
     post = Array.from({ length: matrix.length }, (i) => (i = -1));
 
     DFS(matrix, pre, post);
-    console.log(pre);
-    console.log(post);
+
     // KRAWĘDZIE POWROTNE
     backEdges = FindBackEdges(pre, post, matrix);
-    console.log(backEdges);
 
     // ŚCIEŻKI DO PODANYCH WIERZCHOŁKÓW Z KRAWĘDZI POWROTNYCH
     paths = [];
@@ -132,7 +130,7 @@ function FindCycle1() {
         }
         paths.push(transformedPath);
     }
-    console.log(paths);
+
     shortestCycle = null;
     if (paths.length > 0) {
         // ZNALEZIENIE NAJKRÓTSZEGO CYKLU PORÓWNUJĄC DŁUGOŚCI TABLIC ŚCIEŻEK
@@ -140,7 +138,6 @@ function FindCycle1() {
             prev.length > next.length ? next : prev
         );
     }
-    console.log(shortestCycle);
 
     // WYŚWIETLENIE WYNIKU
     nodesCount = 0;
